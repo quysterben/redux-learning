@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import AddComponent from "./components/AddComponent";
+import TodosList from "./components/TodosList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <div
+            style={{
+                margin: "80px",
+                width: "800px",
+                height: "800px",
+                backgroundColor: "lightblue",
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <AddComponent></AddComponent>
+            <hr></hr>
+            <TodosList></TodosList>
+        </div>
+    );
 }
 
 export default App;
